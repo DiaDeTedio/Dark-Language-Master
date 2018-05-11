@@ -1,0 +1,13 @@
+{Loop}
+DECLARATION
+var it = 0;
+var en = 1;
+it = 1;
+var o = it+en;
+When it equals en
+var res = it+en;
+end wheno = [o[0]: Value=i, IsArray=False, DefaultValue=]
+[o[1]: Value=t, IsArray=False, DefaultValue=]
+[o[2]: Value=+, IsArray=False, DefaultValue=]
+[o[3]: Value=e, IsArray=False, DefaultValue=]
+[o[4]: Value=n, IsArray=False, DefaultValue=]

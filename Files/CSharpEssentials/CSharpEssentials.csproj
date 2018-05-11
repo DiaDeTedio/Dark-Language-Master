@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0DFEF44-CBBB-4330-9F2E-6D8B75FCDC1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CSharpEssentials</RootNamespace>
+    <AssemblyName>CSharpEssentials</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\NoLimitsGameEngine\packages\MonoGame.Extended.Content.Pipeline.0.6.568\tools\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CSEMainClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\BinaryComparer.cs" />
+    <Compile Include="Clipboard.cs" />
+    <Compile Include="Classes\IFileObject.cs" />
+    <Compile Include="Xml\XmlUtils.cs" />
+    <Compile Include="StringFunctions.cs" />
+    <Compile Include="Designer\Controls\NProgressBar.cs" />
+    <Compile Include="Designer\Controls\NPropertyGrid.cs" />
+    <Compile Include="Designer\Controls\Bases\BasePropDesigner.cs" />
+    <Compile Include="Designer\Controls\NTreeView.cs" />
+    <Compile Include="Designer\Controls\Bases\GraphicsDrawArea.cs" />
+    <Compile Include="Bases\CustomEnum.cs" />
+    <Compile Include="Designer\Controls\Bases\CustomEnumPropDesigner.cs" />
+    <Compile Include="Utils\ActionCollection.cs" />
+    <Compile Include="Bases\RuntimeField.cs" />
+    <Compile Include="Classes\RField.cs" />
+    <Compile Include="Designer\Forms\Bases\EmptyBorderlessForm.cs" />
+    <Compile Include="Designer\Controls\Bases\FloatingControl.cs" />
+    <Compile Include="Designer\Controls\DrawArea.cs" />
+    <Compile Include="Designer\Controls\FloatingText.cs" />
+    <Compile Include="Designer\Controls\NListView.cs" />
+    <Compile Include="Designer\Controls\FloatingImage.cs" />
+    <Compile Include="Designer\Controls\FloatingImageGrid.cs" />
+    <Compile Include="Designer\Controls\Bases\DraggableControl.cs" />
+    <Compile Include="Designer\Controls\Specials\AdvancedListView.cs" />
+    <Compile Include="Designer\Controls\Specials\Classes\AdvancedListViewItem.cs" />
+    <Compile Include="Arithmetics.cs" />
+    <Compile Include="Designer\Controls\ExtensorControl.cs" />
+    <Compile Include="Designer\ControlUtils.cs" />
+    <Compile Include="Json\JsonSerializer.cs" />
+    <Compile Include="Designer\Controls\Bases\NControl.cs" />
+    <Compile Include="Designer\Controls\Bases\NCondition.cs" />
+    <Compile Include="Designer\Controls\Bases\NMenuItem.cs" />
+    <Compile Include="CommonCSharpLists.cs" />
+    <Compile Include="Utils\ProtectedList.cs" />
+    <Compile Include="CStruct.cs" />
+    <Compile Include="Binary\BinarySerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bases\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Source\" />
+    <Folder Include="Xml\" />
+    <Folder Include="Designer\" />
+    <Folder Include="Designer\Controls\" />
+    <Folder Include="Designer\Forms\" />
+    <Folder Include="Designer\Dialogs\" />
+    <Folder Include="Designer\Controls\Bases\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Designer\Forms\Bases\" />
+    <Folder Include="Designer\Controls\Specials\" />
+    <Folder Include="Designer\Controls\Specials\Classes\" />
+    <Folder Include="Json\" />
+    <Folder Include="Binary\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

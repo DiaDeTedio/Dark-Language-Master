@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{F7AA4142-8095-4ADD-AFC3-F065534244C1}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.DarkLanguageExamples PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.DarkLanguageTester PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.DarkLanguageApplication PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DarkLanguageApplication\Program.cs">
+    <Files>
+      <File FileName="DarkLanguageCompiler\Program.cs" Line="26" Column="13" />
+      <File FileName="DarkLanguageCompiler\Source\Compiler.cs" Line="22" Column="5" />
+      <File FileName="CSharpEssentials\Xml\XmlUtils.cs" Line="6" Column="31" />
+      <File FileName="DarkLanguageApplication\Program.cs" Line="14" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.DarkLanguageScriptEditor PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.DarkLanguageCompiler PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

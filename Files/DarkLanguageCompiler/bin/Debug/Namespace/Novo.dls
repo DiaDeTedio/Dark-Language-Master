@@ -1,0 +1,6 @@
+{Meu Script}
+Declare Normal 135,True,"Hello World";
+var Anormal 335,True,"Olá Mundo";
+When Normal != Anormal?
+Normal = Anormal;
+end when

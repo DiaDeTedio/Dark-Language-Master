@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkLanguage", "DarkLanguage\DarkLanguage.csproj", "{1CA7B78D-2D43-4750-BBA0-8170405761C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkLanguageTester", "DarkLanguageTester\DarkLanguageTester.csproj", "{A8C9645F-31EC-4907-9235-1420BFF1EB9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpEssentials", "CSharpEssentials\CSharpEssentials.csproj", "{A0DFEF44-CBBB-4330-9F2E-6D8B75FCDC1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkLanguageCompiler", "DarkLanguageCompiler\DarkLanguageCompiler.csproj", "{6F8DCF8C-1FFE-444E-976E-7AB7660D3D49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkLanguageScriptEditor", "DarkLanguageScriptEditor\DarkLanguageScriptEditor.csproj", "{933F1908-D4AD-4481-996A-7CF4950C8397}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkLanguageApplication", "DarkLanguageApplication\DarkLanguageApplication.csproj", "{F7AA4142-8095-4ADD-AFC3-F065534244C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkLanguageExamples", "DarkLanguageExamples\DarkLanguageExamples.csproj", "{EDCA8728-5911-4D97-9972-2DF5F7A4CF75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CA7B78D-2D43-4750-BBA0-8170405761C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA7B78D-2D43-4750-BBA0-8170405761C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA7B78D-2D43-4750-BBA0-8170405761C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA7B78D-2D43-4750-BBA0-8170405761C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C9645F-31EC-4907-9235-1420BFF1EB9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C9645F-31EC-4907-9235-1420BFF1EB9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C9645F-31EC-4907-9235-1420BFF1EB9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C9645F-31EC-4907-9235-1420BFF1EB9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DFEF44-CBBB-4330-9F2E-6D8B75FCDC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DFEF44-CBBB-4330-9F2E-6D8B75FCDC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DFEF44-CBBB-4330-9F2E-6D8B75FCDC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DFEF44-CBBB-4330-9F2E-6D8B75FCDC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F8DCF8C-1FFE-444E-976E-7AB7660D3D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8DCF8C-1FFE-444E-976E-7AB7660D3D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8DCF8C-1FFE-444E-976E-7AB7660D3D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8DCF8C-1FFE-444E-976E-7AB7660D3D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{933F1908-D4AD-4481-996A-7CF4950C8397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933F1908-D4AD-4481-996A-7CF4950C8397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933F1908-D4AD-4481-996A-7CF4950C8397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933F1908-D4AD-4481-996A-7CF4950C8397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7AA4142-8095-4ADD-AFC3-F065534244C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7AA4142-8095-4ADD-AFC3-F065534244C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7AA4142-8095-4ADD-AFC3-F065534244C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7AA4142-8095-4ADD-AFC3-F065534244C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCA8728-5911-4D97-9972-2DF5F7A4CF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCA8728-5911-4D97-9972-2DF5F7A4CF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCA8728-5911-4D97-9972-2DF5F7A4CF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCA8728-5911-4D97-9972-2DF5F7A4CF75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

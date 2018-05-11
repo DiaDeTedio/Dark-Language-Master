@@ -1,0 +1,4 @@
+var i = 0;
+loop(10)
+var j = i;
+stop loop;

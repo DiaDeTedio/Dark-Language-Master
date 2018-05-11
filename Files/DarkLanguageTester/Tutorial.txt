@@ -1,0 +1,14 @@
+How to program in DarkLanguageCode
+To declare variables
+Declare NAME VALUE,VALUE,VALUE,...(Can be one.);
+To call methods
+NAME(arg arg arg)
+To define condition
+When(VALUE equals|notEquals|lessThan|largerThan VALUE)
+///CODE
+end when
+To make loops
+loop(IterationCount|SimpleCondition| (Infinity|infinity|inf))
+//CODE
+stop lop
+Infinity loops are controlled by programmer and will be occur all times.

@@ -1,0 +1,5 @@
+var i = 0;
+When i == 0?
+var j = i;
+end when;
+var k = i;

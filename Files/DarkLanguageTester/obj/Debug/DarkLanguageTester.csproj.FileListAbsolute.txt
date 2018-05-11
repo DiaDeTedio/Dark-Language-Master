@@ -1,0 +1,9 @@
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageTester\bin\Debug\DarkLanguageTester.exe
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageTester\bin\Debug\DarkLanguageTester.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageTester\obj\Debug\DarkLanguageTester.exe
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageTester\obj\Debug\DarkLanguageTester.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageTester\bin\Debug\DarkLanguage.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageTester\bin\Debug\DarkLanguage.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageTester\obj\Debug\DarkLanguageTester.csprojResolveAssemblyReference.cache
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageTester\bin\Debug\CSharpEssentials.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageTester\bin\Debug\CSharpEssentials.pdb

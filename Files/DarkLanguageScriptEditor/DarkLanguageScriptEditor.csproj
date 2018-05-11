@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{933F1908-D4AD-4481-996A-7CF4950C8397}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DarkLanguageScriptEditor</RootNamespace>
+    <AssemblyName>DarkLanguageScriptEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DarkLanguageScripterWindow.cs" />
+    <Compile Include="DarkLanguageScripterWindow.Designer.cs">
+      <DependentUpon>DarkLanguageScripterWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Controls\AutoCompletionBox.cs" />
+    <Compile Include="Designer\Controls\AutoCompletionBox.Designer.cs">
+      <DependentUpon>AutoCompletionBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Controls\DarkLanguageCoder.cs" />
+    <Compile Include="Designer\Controls\DarkLanguageCoder.Designer.cs">
+      <DependentUpon>DarkLanguageCoder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Designer\Controls\DescriptionShower.cs" />
+    <Compile Include="Designer\Controls\DescriptionShower.Designer.cs">
+      <DependentUpon>DescriptionShower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Designer\Controls\CustomRichTextBox.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DarkLanguageScripterWindow.resx">
+      <DependentUpon>DarkLanguageScripterWindow.cs</DependentUpon>
+      <LogicalName>DarkLanguageScriptEditor.MainForm.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Controls\AutoCompletionBox.resx">
+      <DependentUpon>AutoCompletionBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Controls\DarkLanguageCoder.resx">
+      <DependentUpon>DarkLanguageCoder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Controls\DescriptionShower.resx">
+      <DependentUpon>DescriptionShower.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bases\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Source\" />
+    <Folder Include="Designer\" />
+    <Folder Include="Designer\Controls\" />
+    <Folder Include="Designer\Forms\" />
+    <Folder Include="Designer\Dialogs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DarkLanguageCompiler\DarkLanguageCompiler.csproj">
+      <Project>{6F8DCF8C-1FFE-444E-976E-7AB7660D3D49}</Project>
+      <Name>DarkLanguageCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DarkLanguage\DarkLanguage.csproj">
+      <Project>{1CA7B78D-2D43-4750-BBA0-8170405761C7}</Project>
+      <Name>DarkLanguage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpEssentials\CSharpEssentials.csproj">
+      <Project>{A0DFEF44-CBBB-4330-9F2E-6D8B75FCDC1D}</Project>
+      <Name>CSharpEssentials</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

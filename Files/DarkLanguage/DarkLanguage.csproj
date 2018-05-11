@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CA7B78D-2D43-4750-BBA0-8170405761C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DarkLanguage</RootNamespace>
+    <AssemblyName>DarkLanguage</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interpreter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bases\CodeScript.cs" />
+    <Compile Include="Bases\Source\CODE_INFO.cs" />
+    <Compile Include="Bases\Source\CODE_EXEC.cs" />
+    <Compile Include="Bases\Source\CODE_READER.cs" />
+    <Compile Include="Classes\StringUtils.cs" />
+    <Compile Include="Classes\ScriptClasses\ScriptField.cs" />
+    <Compile Include="Classes\ScriptClasses\ScriptFieldCollection.cs" />
+    <Compile Include="Source\CODE_MATH.cs" />
+    <Compile Include="DarkLangCompiler\Bases\ScriptMethod.cs" />
+    <Compile Include="DarkLangCompiler\Source\ScriptCompiler.cs" />
+    <Compile Include="DarkLangCompiler\Classes\CompiledScript.cs" />
+    <Compile Include="DarkLangCompiler\Bases\ScriptEvent.cs" />
+    <Compile Include="DarkLangCompiler\Bases\ScriptCondition.cs" />
+    <Compile Include="DarkLangCompiler\Bases\Base\ScriptHandler.cs" />
+    <Compile Include="DarkLangCompiler\Bases\ScriptAction.cs" />
+    <Compile Include="DarkLangCompiler\Bases\Classes\ScriptEventHandler.cs" />
+    <Compile Include="DarkLangCompiler\Bases\Classes\ScriptLoopEventHandler.cs" />
+    <Compile Include="DarkLangCompiler\Bases\Classes\ScriptNoneEventHandler.cs" />
+    <Compile Include="DarkLangCompiler\Source\ScriptExecutor.cs" />
+    <Compile Include="Classes\PossibleObjectHandler.cs" />
+    <Compile Include="Versioning\Source\CodeTranslator.cs" />
+    <Compile Include="DarkLangCompiler\Source\ScriptType.cs" />
+    <Compile Include="DarkLangCompiler\Classes\CompilationOutput.cs" />
+    <Compile Include="DarkLangCompiler\Classes\DarkLanguageInfo.cs" />
+    <Compile Include="DarkLangCompiler\CompilerUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Bases\" />
+    <Folder Include="Source\" />
+    <Folder Include="Bases\Source\" />
+    <Folder Include="Classes\ScriptClasses\" />
+    <Folder Include="DarkLangCompiler\" />
+    <Folder Include="DarkLangCompiler\Bases\" />
+    <Folder Include="DarkLangCompiler\Classes\" />
+    <Folder Include="DarkLangCompiler\Source\" />
+    <Folder Include="DarkLangCompiler\Bases\Base\" />
+    <Folder Include="DarkLangCompiler\Bases\Classes\" />
+    <Folder Include="Versioning\" />
+    <Folder Include="Versioning\Source\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpEssentials\CSharpEssentials.csproj">
+      <Project>{A0DFEF44-CBBB-4330-9F2E-6D8B75FCDC1D}</Project>
+      <Name>CSharpEssentials</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,10 @@
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\bin\Debug\DarkLanguageCompiler.exe
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\bin\Debug\DarkLanguageCompiler.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\bin\Debug\DarkLanguage.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\bin\Debug\CSharpEssentials.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\bin\Debug\DarkLanguage.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\bin\Debug\CSharpEssentials.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\obj\Debug\DarkLanguageCompiler.csprojResolveAssemblyReference.cache
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\obj\Debug\DarkLanguageCompiler.exe
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageCompiler\obj\Debug\DarkLanguageCompiler.pdb

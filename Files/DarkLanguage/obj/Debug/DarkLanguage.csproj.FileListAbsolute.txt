@@ -1,0 +1,8 @@
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguage\bin\Debug\DarkLanguage.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguage\bin\Debug\DarkLanguage.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguage\bin\Debug\CSharpEssentials.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguage\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguage\bin\Debug\CSharpEssentials.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguage\obj\Debug\DarkLanguage.csprojResolveAssemblyReference.cache
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguage\obj\Debug\DarkLanguage.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguage\obj\Debug\DarkLanguage.pdb

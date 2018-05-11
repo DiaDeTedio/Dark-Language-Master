@@ -1,0 +1,285 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace CSharpEssentials
+{
+	public static class MainClass
+	{
+		#region Methods
+		public static Type[] GetAllTypes()
+		{
+			List<Type> types = new List<Type>();
+			foreach(var ass in AppDomain.CurrentDomain.GetAssemblies())
+			{
+				types.AddRange(ass.GetExportedTypes());
+			}
+			return types.ToArray();
+		}
+		public static Type[] GetAllTypesOfBaseType(Type baseType)
+		{
+			List<Type> types = new List<Type>();
+			foreach(var ass in AppDomain.CurrentDomain.GetAssemblies())
+			{
+				types.AddRange(ass.GetFilteredTypes(baseType));
+			}
+			return types.ToArray();
+		}
+		public static T GetObject<T>(Type type,params object[] args)
+		{
+			var obj = Activator.CreateInstance(type,args);
+			return (T)obj;
+		}
+		#endregion
+
+		#region Extensions
+		public static void ForEach<T>(this IEnumerable<T> array,Action<T> action)
+		{
+			foreach(var item in array)
+			{
+				action.Invoke(item);
+			}
+		}
+		public static void ForEach<T>(this ICollection<T> array,Action<T> action)
+		{
+			foreach(var item in array)
+			{
+				action.Invoke(item);
+			}
+		}
+		public static void ForEach(this System.Collections.ICollection array,Action<object> action)
+		{
+			foreach(var item in array)
+			{
+				action.Invoke(item);
+			}
+		}
+		public static void ForEach(this System.Collections.IEnumerable array,Action<object> action)
+		{
+			foreach(var item in array)
+			{
+				action.Invoke(item);
+			}
+		}
+		public static void ForEach<T>(this System.Collections.IEnumerable array,Action<T> action)
+		{
+			foreach(var item in array)
+			{
+				var t = (T)item;
+				action.Invoke(t);
+			}
+		}
+		public static void ForEach<T>(this T[,] array,Action<T> action)
+		{
+			foreach(var item in array)
+			{
+				action.Invoke(item);
+			}
+		}
+		public static void ForEach<T>(this T[,,] array,Action<T> action)
+		{
+			foreach(var item in array)
+			{
+				action.Invoke(item);
+			}
+		}
+		public static void ForEach<T>(this T[,,,] array,Action<T> action)
+		{
+			foreach(var item in array)
+			{
+				action.Invoke(item);
+			}
+		}
+		public static List<T> ToList<T>(this IEnumerable<T> enumer)
+		{
+			List<T> l = new List<T>();
+			foreach(var item in enumer)
+			{
+				l.Add(item);
+			}
+			return l;
+		}
+		public static List<object> ToList(this System.Collections.IEnumerator enumer)
+		{
+			List<object> l = new List<object>();
+			while(enumer.MoveNext())
+			{
+				l.Add(enumer.Current);
+			}
+			return l;
+		}
+		public static List<T> ToList<T>(this IEnumerator<T> enumer)
+		{
+			List<T> l = new List<T>();
+			while(enumer.MoveNext())
+			{
+				l.Add(enumer.Current);
+			}
+			return l;
+		}
+		public static T GetLastItem<T>(this IEnumerable<T> enumer)
+		{
+			int index = 0;
+			foreach(var item in enumer)
+			{
+				if(index >= enumer.Count()-1)
+				{
+					return item;
+				}
+				index++;
+			}
+			return default(T);
+		}
+		public static int Count<T>(this IEnumerable<T> enumer)
+		{
+			int index = 0;
+			foreach(var item in enumer)
+			{
+				index++;
+			}
+			return index;
+		}
+		public static void RemoveLast<T>(this IList<T> list)
+		{
+			list.RemoveAt(list.Count-1);
+		}
+		public static void RemoveFirst<T>(this IList<T> list)
+		{
+			list.RemoveAt(0);
+		}
+		public static T[] OpenAcess<T>(this T[] array,params Action<List<T>>[] actions)
+		{
+			List<T> l = new List<T>();
+			array.ForEach((obj) => l.Add(obj));
+			foreach(var action in actions)
+			{
+				action.Invoke(l);
+			}
+			array = l.ToArray();
+			return array;
+		}
+		public static bool Exists<T>(this IEnumerable<T> enumer,Predicate<T> predicate)
+		{
+			foreach(var item in enumer)
+			{
+				if(predicate.Invoke(item))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+		public static string ToStringList<T>(this IEnumerable<T> enumer,string lastCharOnItem = "")
+		{
+			string ret = "";
+			foreach(var item in enumer)
+			{
+				ret += item+lastCharOnItem;
+			}
+			return ret;
+		}
+		public static Type[] GetFilteredTypes(this System.Reflection.Assembly assembly,Type baseType)
+		{
+			List<Type> ret = new List<Type>();
+			foreach(var type in assembly.GetExportedTypes())
+			{
+				if(type.BaseType == baseType)
+				{
+					ret.Add(type);
+				}
+			}
+			return ret.ToArray();
+		}
+		#endregion
+
+		#region Common
+		public static string SearchForFile(string path,string name = null,string extension = null,bool caseSensitive = false)
+		{
+			var files = Directory.GetFiles(path);
+			foreach(var filePath in files)
+			{
+				var file = filePath;
+				if(!caseSensitive)
+				{
+					if(name != null){name = name.ToLower();}
+					if(extension != null){extension = extension.ToLower();}
+					file = file.ToLower();
+				}
+				var fileName = Path.GetFileNameWithoutExtension(file);
+				var fileExtension = Path.GetExtension(file);
+				if(name != null)
+				{
+					if(fileName.Contains(name))
+					{
+						return file;
+					}
+				}
+				if(extension != null)
+				{
+					if(fileExtension.Contains(extension))
+					{
+						return file;
+					}
+				}
+			}
+			return null;
+		}
+		public static string[] SearchForFiles(string path,string name = null,string extension = null,bool caseSensitive = false)
+		{
+			List<string> ret = new List<string>();
+			var files = Directory.GetFiles(path);
+			foreach(var filePath in files)
+			{
+				var file = filePath;
+				if(!caseSensitive)
+				{
+					if(name != null){name = name.ToLower();}
+					if(extension != null){extension = extension.ToLower();}
+					file = file.ToLower();
+				}
+				var fileName = Path.GetFileNameWithoutExtension(file);
+				var fileExtension = Path.GetExtension(file);
+				if(name != null)
+				{
+					if(fileName.Contains(name))
+					{
+						if(!ret.Contains(file))
+						{
+							ret.Add(file);
+						}
+					}
+				}
+				if(extension != null)
+				{
+					if(fileExtension.Contains(extension))
+					{
+						if(!ret.Contains(file))
+						{
+							ret.Add(file);
+						}
+					}
+				}
+			}
+			return ret.ToArray();
+		}
+		public static void Iterate(Delegate method,long iterations = 1)
+		{
+			for(int i=0;i<=iterations;i++)
+			{
+				method.DynamicInvoke(i);
+			}
+		}
+		public static void Iterate(Action<int> action,long iterations)
+		{
+			for(int i=0;i<=iterations;i++)
+			{
+				action.Invoke(i);
+			}
+		}
+		public static void CMethod(Delegate method)
+		{
+			method.DynamicInvoke();
+		}
+		#endregion
+	}
+}

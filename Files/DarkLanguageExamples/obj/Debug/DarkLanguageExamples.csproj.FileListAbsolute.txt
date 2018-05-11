@@ -1,0 +1,13 @@
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\DarkLanguageExamples.exe
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\DarkLanguageExamples.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\CSharpEssentials.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\DarkLanguage.dll
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\DarkLanguageApplication.exe
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\DarkLanguageCompiler.exe
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\DarkLanguageCompiler.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\DarkLanguageApplication.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\DarkLanguage.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\bin\Debug\CSharpEssentials.pdb
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\obj\Debug\DarkLanguageExamples.csprojResolveAssemblyReference.cache
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\obj\Debug\DarkLanguageExamples.exe
+C:\Users\Computador Pessoal\Documents\Dark Projects\DarkLanguage\DarkLanguageExamples\obj\Debug\DarkLanguageExamples.pdb
